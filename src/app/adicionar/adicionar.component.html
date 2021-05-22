@@ -1,0 +1,34 @@
+<form [formGroup]="formulario" (ngSubmit)="anadir()"> 
+    <ul>
+        <li *ngFor=" let item of lista">{{item}}</li>
+    </ul>
+    
+    <ul>
+        <li>
+            <label for="titulo">Titulo</label><br>
+            <input id="titulo" formControlName="titulo" type="text" placeholder="Titulo" requiered="true"/>
+        </li>
+    
+        <li>
+            <label for="estado">Estado</label><br>
+            <select id="estado" formControlName="estado">
+                <option>Select</option>
+                <option>Abierto</option>
+                <option>En proceso</option>
+                <option>Cerrado</option>
+            </select>
+        </li>
+        
+        <li>
+            <label id="parrafo" for="descripcion">Descripción</label><br>
+            <textarea id="descripcion" formControlName="descripcion"></textarea>
+        </li>
+        <li>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active">
+                <button class="actualizar" type="submit">Actualizar </button>
+            </a>
+            <button class="eliminar" type="button" (click)="eliminar()">Eliminar</button>
+        </li>
+    </ul>
+    <!--<button type="submit">Actualizar </button>-->
+</form> 

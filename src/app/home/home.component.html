@@ -1,0 +1,41 @@
+<ul>
+    
+        <li class="formato" *ngFor="let item of Lista" >
+            <a [routerLink]="['/editar']" routerLinkActive>
+                <button class="abierto" *ngIf="item.estado==1">
+                <div class="contenido">
+                    <h3>{{item.titulo}}</h3>
+                    <p>{{item.descripcion}}</p>
+                    <button class="eliminar">X</button>
+                </div>
+                </button>
+            </a>
+        </li>
+    
+        <li class="formato" *ngFor="let item of Lista">
+            <button class="enProceso" *ngIf="item.estado==2">
+            <div class="contenido">
+                <h3>{{item.titulo}}</h3>
+                <p>{{item.descripcion}}</p>
+                <button class="eliminar">X</button>
+            </div>
+            </button>
+        </li>
+
+        <li class="formato" *ngFor="let item of Lista">
+            <button class="cerrado" *ngIf="item.estado==0">
+            <div class="contenido">
+                <h3>{{item.titulo}}</h3>
+                <p>{{item.descripcion}}</p>
+                <button class="eliminar">X</button>
+            </div>
+            </button>
+        </li>
+
+</ul>
+
+<a [routerLink]="['/adicionar']" routerLinkActive="router-link-active">
+    <button class="adicionar">+</button>
+</a>
+
+ 

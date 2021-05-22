@@ -1,0 +1,67 @@
+// C O L O R E S :
+
+// #F4547c -> Tarea abierta 
+// #fc9bb2 -> Tarea en proceso
+// #fcbfc9 -> Tarea cerrada
+
+/*div.notas{
+    background-color: #f4547c;
+    border: solid 1px #7c2128;
+    width: 20%;
+}*/
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+}
+ul li.formato{
+    height: 20%;
+}
+div.contenido{
+    padding:5%;
+}
+
+button.abierto{
+    margin:2%;
+    height:30%;
+    border-radius:10px;
+    background-color: #f4547c;
+    border: #7c2128;
+}
+button.enProceso{
+    margin:2%;
+    height:30%;
+    height: auto;
+    border-radius:10px;
+    background-color: #fc9bb2;
+    border: #7c2128;
+}
+button.cerrado{
+    margin:2%;
+    height: 30%;
+    border-radius:10px;
+    background-color: #fcbfc9;
+    border: #fcbfc9;
+}
+button.eliminar{
+    margin:5%;
+    border: 1px solid #666666;
+    border-radius:10px;
+    background-color: white; 
+}
+
+button.adicionar{
+    margin-right: 10%;
+    color:#e0219e;
+    text-decoration: none;
+    border: 1px solid #666666;
+    background-color: #dcdde1;
+    font-size: x-large;
+    border-radius: 30px;
+    width: 5%;
+    float: right;
+}
+
+
+

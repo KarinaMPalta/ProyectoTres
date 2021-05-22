@@ -1,0 +1,52 @@
+form{
+    margin:auto;
+    text-align:center;
+    border-radius:10px;
+    border: 1px solid #666666;
+    width: 520px;
+    background-color: #dcdde1;
+}
+
+form ul{
+    list-style: none;
+    padding: 0%;
+    margin: 5% 0 0 5%;
+    text-align: left;
+}
+input{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+textarea{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom:2%;
+}
+select{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button.actualizar{
+    color:#dcdde1;
+    text-decoration: none;
+    border: 1px solid #ed4faf;
+    background-color: #e0219e;
+    font-size: large;
+    border-radius: 10px;
+    width: 40%; 
+}
+button.eliminar{
+    margin-left:10%;
+    margin-top:5%;
+    margin-bottom: 9%;
+    color:#dcdde1;
+    text-decoration: none;
+    border: 1px solid #ed4faf;
+    background-color: #e0219e;
+    font-size: large;
+    border-radius: 10px;
+    width: 40%;
+}
